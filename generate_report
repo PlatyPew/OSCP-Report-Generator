@@ -1,0 +1,37 @@
+#!/bin/sh
+
+if [ $# -ne 1 ]; then
+    echo "$0 <report name>"
+    exit 1
+fi
+
+FILE=$1
+
+printf "Enter your OSID: OS-"
+read OSID
+
+printf "Enter your email: "
+read EMAIL
+
+DATE=$(date +'%Y-%m-%d')
+
+SED=sed
+if [[ $(uname) == "Darwin" ]]; then
+    SED=gsed
+fi
+
+${SED} -i "s/date: \"1965-08-09\"/date: \"${DATE}\"/" ${FILE}
+${SED} -i "s/author: \[\"john@doe\.com\", \"OSID: OS-XXXXXXXX\"\]/author: \[\"${EMAIL}\", \"OSID: OS-${OSID}\"\]/" ${FILE}
+
+pandoc ${FILE} \
+    -o OSCP-OS-${OSID}-Exam-Report.pdf \
+    --from markdown+yaml_metadata_block+raw_html \
+    --template eisvogel \
+    --table-of-contents \
+    --toc-depth 6 \
+    --number-sections \
+    --top-level-division=chapter \
+    --highlight-style breezedark \
+    --resource-path=.:src
+
+7z a OSCP-OS-${OSID}-Exam-Report.7z OSCP-OS-${OSID}-Exam-Report.pdf
