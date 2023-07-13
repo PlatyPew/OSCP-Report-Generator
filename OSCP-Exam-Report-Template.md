@@ -109,7 +109,7 @@ In some cases, some ports may not be listed.
 
 **Service Scan Results:**
 
-```shell
+```sh
 
 ```
 
@@ -191,7 +191,7 @@ In some cases, some ports may not be listed.
 
 **Service Scan Results:**
 
-```shell
+```sh
 
 ```
 
@@ -273,7 +273,7 @@ In some cases, some ports may not be listed.
 
 **Service Scan Results:**
 
-```shell
+```sh
 
 ```
 
@@ -355,7 +355,7 @@ In some cases, some ports may not be listed.
 
 **Service Scan Results:**
 
-```shell
+```sh
 
 ```
 
@@ -437,7 +437,7 @@ In some cases, some ports may not be listed.
 
 **Service Scan Results:**
 
-```shell
+```sh
 
 ```
 
@@ -519,7 +519,7 @@ In some cases, some ports may not be listed.
 
 **Service Scan Results:**
 
-```shell
+```sh
 
 ```
 
