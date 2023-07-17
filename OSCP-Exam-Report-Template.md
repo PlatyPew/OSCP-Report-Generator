@@ -600,7 +600,9 @@ Offensive Security should not have to remove any user accounts or services from 
 
 # Additional Items
 
-## Appendix - Proof and Local Contents:
+## Appendix - Credentials
+
+## Appendix - Proof and Local Contents
 
 | IP (Hostname) | Local.txt Contents | Proof.txt Contents |
 | ------------- | ------------------ | ------------------ |
