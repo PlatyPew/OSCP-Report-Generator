@@ -161,7 +161,7 @@ _Additional Priv Esc info_
 Exploit code here
 ```
 
-**Proof Screenshot Here**
+**Proof.txt Proof Screenshot Here**
 
 ![](img)
 
@@ -243,7 +243,7 @@ _Additional Priv Esc info_
 Exploit code here
 ```
 
-**Proof Screenshot Here**
+**Proof.txt Proof Screenshot Here**
 
 ![](img)
 
@@ -325,7 +325,7 @@ _Additional Priv Esc info_
 Exploit code here
 ```
 
-**Proof Screenshot Here**
+**Proof.txt Proof Screenshot Here**
 
 ![](img)
 
@@ -407,7 +407,7 @@ _Additional Priv Esc info_
 Exploit code here
 ```
 
-**Proof Screenshot Here**
+**Proof.txt Proof Screenshot Here**
 
 ![](img)
 
@@ -489,7 +489,7 @@ _Additional Priv Esc info_
 Exploit code here
 ```
 
-**Proof Screenshot Here**
+**Proof.txt Proof Screenshot Here**
 
 ![](img)
 
@@ -571,7 +571,7 @@ _Additional Priv Esc info_
 Exploit code here
 ```
 
-**Proof Screenshot Here**
+**Proof.txt Proof Screenshot Here**
 
 ![](img)
 
@@ -602,16 +602,26 @@ Offensive Security should not have to remove any user accounts or services from 
 
 ## Appendix - Credentials
 
+### Active Directory Machines
+
+| Domain\\Usernames | Hashes | Passwords |
+| ----------------- | ------ | --------- |
+
+### Standalone Machines
+
+| Username@Host | Password |
+| ------------- | -------- |
+
 ## Appendix - Proof and Local Contents
 
 | IP (Hostname) | Local.txt Contents | Proof.txt Contents |
 | ------------- | ------------------ | ------------------ |
-| 192.168.x.x   | hash here          | hash here          |
-| 192.168.x.x   | hash here          | hash here          |
-| 192.168.x.x   | hash here          | hash here          |
-| 192.168.x.x   | hash here          | hash here          |
-| 192.168.x.x   | hash here          | hash here          |
-| 192.168.x.x   | hash here          | hash here          |
+| 192.168.x.x   | -                  | -                  |
+| 192.168.x.x   | -                  | -                  |
+| 192.168.x.x   | -                  | hash               |
+| 192.168.x.x   | hash               | hash               |
+| 192.168.x.x   | hash               | hash               |
+| 192.168.x.x   | hash               | hash               |
 
 ## Appendix - Metasploit/Meterpreter Usage
 
